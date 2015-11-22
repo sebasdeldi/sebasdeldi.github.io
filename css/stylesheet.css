@@ -1,0 +1,394 @@
+/***************************
+****************************
+CODIGO DE LOS HEXAGONOS
+TOMADO DE : http://www.cssplay.co.uk/menus/hexagon.html
+****************************
+***************************/
+
+
+
+#hex {
+	padding:0; 
+	margin:0 auto; 
+	list-style:none; 
+	width:325px;
+
+}
+
+
+#hex li {
+	display:block; 
+	float:left; 
+	width:104px; 
+	margin-right:4px;  
+	height:120px;
+}
+
+#hex li.p1 {
+	padding-left:54px;
+}
+
+#hex li.p2 {
+	margin-top:-26px;
+}
+
+#hex li a {
+	text-decoration:none;
+	color:#16a6b6; 
+	cursor:pointer;
+}
+
+#hex li a b {
+	display:block; 
+	width:0; 
+	height:0; 
+	overflow:hidden; 
+	border-bottom:30px 
+	solid #000; 
+	border-left:52px 
+	dotted transparent; 
+	border-right:52px dotted transparent;
+}
+
+
+#hex li a span {
+	display:block; 
+	width:104px; 
+	height:60px; 
+	line-height:2.2; 
+	text-align:center; 
+	background:#000; 
+	font-size:14px; 
+	font-family: "freightsans_regular",sans-serif;
+}
+
+
+#hex li a em {
+	display:block; 
+	width:0; height:0; 
+	overflow:hidden; 
+	border-top:30px solid #000; 
+	border-left:52px dotted transparent; 
+	border-right:52px dotted transparent;
+}
+/* hack for IE5.5 */
+* html #hex li a b, * html #hex li a em {
+	width:104px; 
+	height:30px;
+	w\idth:0; 
+	he\ight:0;
+}
+
+
+#hex li a.inner b {
+	border-bottom-color:#16a6b6;
+
+}
+
+#hex li a.inner span {
+	background:#16a6b6;
+}
+
+#hex li a.inner em {
+	border-top-color:#16a6b6;
+}
+
+
+#hex li a:hover {
+	white-space:normal; 
+	color:#fff;
+}
+
+#hex li a:hover b {
+	border-bottom-color:#16a6b6;
+}
+
+#hex li a:hover span {
+	background:#16a6b6;
+}
+
+#hex li a:hover em {
+	border-top-color:#16a6b6;
+}
+
+#hex li a.inner:hover b {
+	border-bottom-color:#000;
+}
+
+#hex li a.inner:hover span {
+	background:#000;
+}
+
+#hex li a.inner:hover em {
+	border-top-color:#000;
+}
+
+
+/***************************
+****************************
+FIN CODIGO DE LOS HEXAGONOS
+TOMADO DE : http://www.cssplay.co.uk/menus/hexagon.html
+****************************
+***************************/
+
+
+
+
+body{	
+
+	font-family: "freightsans_regular",sans-serif;
+	line-height: 1;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 78px;
+}
+
+::selection {
+	background: #ee6557;
+    color: #fff;
+}
+
+.container{
+	padding: 40px;
+	background: whitesmoke;
+	width: 1142px;
+	border-radius: 3px;
+	margin: 20px;
+	position: relative;
+}
+
+
+
+nav{
+	text-align: center;
+	vertical-align: middle;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav img{
+	width: 120px;
+	height: 120px;
+}
+
+nav a{
+	display:inline-block;
+	margin:0 30px 0 30px;
+	text-decoration: none;
+	color: #6b6b6b;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	position: relative;
+	top: -55px;
+
+}
+
+nav a:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+nav a:hover{
+	color: #16a6b6;
+
+}
+
+#sec-about{
+
+	margin-top: 100px;
+	margin-bottom: 150px;
+	background-image: url("../assets/coolbg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+#sec-about p{
+
+	font-size: 24px;
+	text-align: center;
+	color: black;
+	font-weight: 100;
+	line-height: 1.4;
+
+
+}
+
+#sec-about img{
+
+	border-radius: 50%;
+	width: 250px;
+	display: block;
+    margin:60px auto 60px auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#16a6b6; 
+
+}
+
+#portafolio{
+	margin-top: 100px;
+	margin-bottom: 468px;	
+}
+
+#skills{
+	
+	margin: 150px auto 120px auto;
+}
+
+#skills .divider{
+
+	margin: 180px auto 0 auto;
+}
+
+#studies{
+	margin-top: 0;
+}
+
+#studies img{
+
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+
+.box{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+	margin:0 auto 0 auto;
+}
+
+
+#contact{
+	margin: 120px auto 0 auto;
+}
+
+#ct{
+
+	
+	text-align: center;
+}
+
+#contact a{
+
+
+
+	text-align: center;
+	font-size: 40px;
+	color:#16a6b6 ;
+	background-color: black;
+	border-radius: 50%;
+
+	margin: 30px;
+	
+	
+	display: inline-block;
+	font-size: 48px;
+	padding: 15px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+#contact a:hover{
+
+	background-color: #16a6b6;
+	color: black;
+}
+
+
+.c100.p25.green{
+
+	margin-right: 38px;
+}
+
+
+.c100.p25 p{
+
+	font-size: 24px;
+	text-align: center;
+}
+
+
+#up-btn {
+
+
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 17.5px 30.3px 17.5px;
+	border-color: transparent transparent #16a6b6 transparent;
+
+  
+  position: fixed;
+  bottom:45px;
+  right:45px;
+  opacity: 0.3;
+  -webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+
+
+
+}
+
+#up-btn:hover{
+	background-color:transparent transparent black transparent;
+ 
+  opacity: 1;
+
+}
+
+footer{
+
+	padding: 50px 0;
+	text-align: center;
+	font-size: 18px;
+
+}
+
+
+
+.divider{
+
+	width: 160px;
+	border-top: 1px solid #16a6b6;
+	margin: 0 auto;
+}
+
+.divider2{
+	width: 160px;
+	border-top: 1px solid #16a6b6;
+	margin: 0 auto 150px auto;
+
+}
+
+.wraper{
+	width: 792px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+}
+
+
+
+
